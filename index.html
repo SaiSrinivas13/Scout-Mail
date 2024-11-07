@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scout Mail</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+    <nav>
+      <div class="logo" style="display: flex; align-items: center;">
+        <img src="img/email.svg" alt="email svg" style="margin-right: 10px;">
+        <span><strong>ScoutMail</strong></span>
+      </div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1><strong>Your Email to Validate</strong></h1>
+            <form action="/submit" method="post">
+                <!-- Text input for username -->
+                <input placeholder="Enter your email" type="text" id="username" name="username" required>
+                <br><br>
+        
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+              </form>
+        </div>
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id ="resultCont">
+                Your results will show here
+            
+            </div>
+        </div>
+    </main>
+    <footer> Copyright | iValidate | All Rights Reserved</footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

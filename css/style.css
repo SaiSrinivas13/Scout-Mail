@@ -1,0 +1,117 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@484&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+  font-family: "Overpass", sans-serif;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 10px
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+ul>li>a:hover{
+    color: rgb(147, 144, 144);
+
+}
+
+main{
+    min-height: 84vh;
+
+}
+.logo img{
+    width: 30px;
+}
+
+
+.container{
+
+    max-width: 80vw;
+    margin: auto;
+    padding: 10px 15px;
+    
+}
+
+.container h1{
+    padding: 20px 0 15px 0;
+
+}
+
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:medium;
+}
+
+#resultCont div::first-letter{
+    text-transform: capitalize;
+}
+
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and  (max-width: 600px) {
+    .container{
+        font-size: 12px;
+
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+
+    }   
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        
+        width: 20px;
+        
+    }
+}
